@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
 
-import static com.wagner.heroesapi.constants.HeroesConstant.ENDPOINT_DYNAMO;
-import static com.wagner.heroesapi.constants.HeroesConstant.REGION_DYNAMO;
+import static com.wagner.heroesapi.constants.HeroesConstant.*;
 
 @Configuration
 @EnableDynamoDBRepositories
@@ -27,7 +26,7 @@ public class HeroesTable {
 
         DynamoDB dynamoDB = new DynamoDB(client);
 
-        String tableName="Heroes_Table";
+        String tableName=TABLE_NAME;
 
         try{
             Table table = dynamoDB.createTable(tableName,

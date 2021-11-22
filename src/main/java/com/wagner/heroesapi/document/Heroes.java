@@ -7,10 +7,11 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import nonapi.io.github.classgraph.json.Id;
+import static com.wagner.heroesapi.constants.HeroesConstant.*;
 
 @Data
 @NoArgsConstructor
-@DynamoDBTable(tableName = "Heroes_Table")
+@DynamoDBTable(tableName = TABLE_NAME)
 public class Heroes {
 
     @Id
