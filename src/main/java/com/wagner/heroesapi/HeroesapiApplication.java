@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // A anotação abaixo serve para configurar a documentação do Swagger
 @OpenAPIDefinition(info = @Info(
-		title = "HERO API",
+		title = "HEROES API",
 		version = "1.0",
 		description = "Gerenciador de super heróis da Marvel e da DC em uma API reativa com Spring Boot",
 		contact = @Contact(name = "Wagner Kaba", url = "https://github.com/wagnerkaba", email = "elguapore@gmail.com")))

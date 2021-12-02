@@ -2,7 +2,7 @@
 
 Gerenciador de super heróis da Marvel e da DC em uma API reativa com Spring Boot
 
-Documentação disponível em: https://wkheroesapi.herokuapp.com//swagger-ui.html
+Documentação disponível em: https://wkheroesapi.herokuapp.com/swagger-ui.html
 
 **Tecnologias utilizadas:**
 
