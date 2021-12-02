@@ -60,7 +60,10 @@ public class HeroesController {
     }
 
 
+    public Mono<HttpStatus> updateHero(@PathVariable String id){
 
+        return Mono.just(HttpStatus.OK);
+    }
 
 
 

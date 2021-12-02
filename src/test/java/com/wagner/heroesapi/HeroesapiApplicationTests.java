@@ -30,7 +30,9 @@ public class HeroesapiApplicationTests {
 
 	@org.junit.Test
 	public void createHero(){
-		Heroes batman = new Heroes("45", "Batman", "DC", 10);
+
+
+		Heroes batman = new Heroes("45", "Batman", "DC", null);
 
 		webTestClient.post().uri(HEROES_ENDPOINT_LOCAL)
 				.body(Mono.just(batman), Heroes.class)
@@ -46,7 +48,7 @@ public class HeroesapiApplicationTests {
 	@org.junit.Test
 	public void getOneHeroeById(){
 
-		webTestClient.get().uri(HEROES_ENDPOINT_LOCAL.concat("/{id}"),"2")
+		webTestClient.get().uri(HEROES_ENDPOINT_LOCAL.concat("/{id}"),"1")
 				.exchange()
 				.expectStatus().isOk()
 				.expectBody();

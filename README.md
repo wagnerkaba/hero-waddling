@@ -8,8 +8,8 @@ Documentação disponível em: https://wkheroesapi.herokuapp.com/swagger-ui.html
 
 **Novas implementações:**
 
-- criado teste unitário para o método *createHero()*
-- 
+- Criado teste unitário para o método *createHero()*
+- Ao invés de mostrar apenas o número de filmes de cada herói, foi implementado a possibilidade de salvar uma lista de filmes para cada herói, com o respectivo código e nome do filme.
 
 **Tecnologias utilizadas:**
 

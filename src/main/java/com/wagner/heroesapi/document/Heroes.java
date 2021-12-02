@@ -7,6 +7,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import nonapi.io.github.classgraph.json.Id;
+
+import java.util.List;
+
 import static com.wagner.heroesapi.constants.HeroesConstant.*;
 
 @Data
@@ -22,7 +25,7 @@ public class Heroes {
     @DynamoDBAttribute(attributeName = "universe")
     private String universe;
     @DynamoDBAttribute(attributeName = "films")
-    private int films;
+    private List<Films> films;
 
     public String getId() {
         return id;
@@ -48,15 +51,15 @@ public class Heroes {
         this.universe = universe;
     }
 
-    public int getFilms() {
+    public List<Films> getFilms() {
         return films;
     }
 
-    public void setFilms(int films) {
+    public void setFilms(List<Films> films) {
         this.films = films;
     }
 
-    public Heroes(String id, String name, String universe, int films) {
+    public Heroes(String id, String name, String universe, List<Films> films) {
         this.id = id;
         this.name = name;
         this.universe = universe;
